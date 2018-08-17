@@ -14,4 +14,9 @@ RSpec.describe User, type: :model do
         expect(@user).to_not be_valid 
        end
 end
+describe "custom name methods" do
+	it "has a full name method" do
+		expect(@user.full_name).to eq("sai, hiten")
+	end
+end		
 end
